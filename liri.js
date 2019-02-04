@@ -1,94 +1,92 @@
 
-// FIRST install all the npms
-    // Installed Spotify, Axios, Dot Env
-        // Did not download an api for OMDB or Bands in Town... will just need the key for those I think
-        // Unclear on moment.js npm? Do I need to install this??
+// Git init to create Json files
 
-// THEN git init
-    // I think I successfully completed this. I have a package.json and a package-lock.json
+// Install the npms
+// Installed NPMs Spotify, Axios, Dotenv, Moment
+// Use APIs with Axios for OMDB and Bands in Town
 
-// THEN require all of the npms
-    // ex: require("dotenv").config();
+// Require npms according to documentation
 
-var Spotify = require('spotify').config();
-var axios = require('axios').config();
-var bandsInTown = require('bandsInTown').config(); // ??
-var OMDB = require('OMDB').config();
-var dotEnv = require('dotenv').config()
-var request = require('request');
+require('node-spotify-api');
+// Had var spotify here before, but removed it since I created a var spotify below as specified in instructions
+var axios = require('axios');
+var moment = require('moment');
+require('dotenv').config()
 var fs = require('fs');
 
-// Load keys
-var keys = require("../liri-node-app/keys");
-
-// Load exports from keys.js file which has authorization keys
-// ex: var spotify = new Spotify(keys.spotify);
-
-var spotifyCredentials = // why does the keys file point to the env.js?
-var bandsInTownCredentials = // where do I put these?
-var omdbCredentials = // where do I put these?
+// Load exports from keys.js file that have authorization keys
+// BandsInTown & OMDB - These are public so we will use Axios. 
+var keys = require("./keys");
+var spotify = new Spotify(keys.spotify);
 
 // Read in the command line arguments
-// The LIRI command will always be the second command line argument
+// Node is [0], file is [1], LIRI command is [2]
+// If band/song/movie is more than one word, use process.argv.slice(3).join(" "); 
+process.argv[2];
+process.argv[3];
+console.log(process.argv[2])
+console.log(process.argv.slice(3).join(" "))
 
-// Make it so liri.js can take in one of the following commands:
-//    `concert-this`
-//    `spotify-this-song`
-//    `movie-this`
-//    `do-what-it-says`
+// Bandsintown - use Axios to retrieve data from the Bandsintown API
+// `node liri.js concert-this <artist/band name here>`
+// Output the following information about the artist:
+//      * Name of the venue, Venue location, Date of the Event (use moment to format this as "MM/DD/YYYY")
+// STILL NEED TO FORMAT THE DATE USING MOMENT.JS
 
-// Do I need to install inquirer? The instructions don't say to, but how else do I take in the command?
+// concert-this = process.argv[2]
+var artist = process.argv.slice(3).join(" ");
+var bandQuery = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+axios.get(bandQuery).then(
+    function (response) {
+        console.log("Playing at " + response.venue.name + " in " + response.venue.city + " on " + response.datetime + ".")
+    }
+)
 
-function Spotify() {
-    this.concert = concert;
-    this.song = song;
-}
-
-function Omdb() {
-    this.movie = movie;
-}
-    // what is `do-what-it-says"?
-
-
-
-
-// ### What Each Command Should Do
-// 1. `node liri.js concert-this <artist/band name here>`
-//    * This will search the Bands in Town Artist Events API (`"https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"`) for an artist and render the following information about each event to the terminal:
-//      * Name of the venue
-//      * Venue location
-//      * Date of the Event (use moment to format this as "MM/DD/YYYY")
-
-
-
-// 2. `node liri.js spotify-this-song '<song name here>'`
-
-//    * This will show the following information about the song in your terminal/bash window
+// Spotify - use key to retrieve data
+// `node liri.js spotify-this-song '<song name here>'`
+//  This will show the following information about the song:
 //      * Artist(s)
 //      * The song's name
 //      * A preview link of the song from Spotify
 //      * The album that the song is from
+//  If no song is provided then your program will default to "The Sign" by Ace of Base.
 
-//    * If no song is provided then your program will default to "The Sign" by Ace of Base.
+// spotify-this-song = process.argv[2]
+var artist = process.argv.slice(3).join(" ");
 
-// 3. `node liri.js movie-this '<movie name here>'`
+// ASK: DO I DO THIS LIKE THE OTHERS WITH AXIOS, OR DO I USE A FUNCTION BECAUSE THE NPM IS LOADED? IF A FUNCTION, HOW DO I START?
+// use a switch statement with this function?
+    // function spotify() {
+    //     this.song = song;
+    // }
 
-// This will output the following information to your terminal/bash window:
-//   
-//     * Title of the movie.
-//     * Year the movie came out.
-//     * IMDB Rating of the movie.
-//     * Rotten Tomatoes Rating of the movie.
-//     * Country where the movie was produced.
-//     * Language of the movie.
-//     * Plot of the movie.
-//     * Actors in the movie.
-//   
-// * If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
-// * You'll use the `axios` package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use `trilogy`.
 
+// OMDB - use Axios to retrieve data from the OMDB API
+// `node liri.js movie-this '<movie name here>'`
+// This will output the following information abou the movie:
+//     * Title, Year, IMDB Rating, Rotten Tomatoes Rating, Country, Language, Plot, Actors
+// If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
+// THIS IS AN IF ELSE STATEMENT... NEED TO WORK ON THIS!
+
+// got json info from Stack Overflow... hope that works
+// Question: why does the OMDB site not let you do more testing?? It says I reached my max for no reason?
+
+// movie-this = process.argv[2]
+var movie = process.argv.slice(3).join(" ");
+var movieQuery = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+axios.get(movieQuery).then(
+    function (response) {
+        console.log("Movie Name: " + response.data.Title + ", Year Released: " + response.data.Year + ", IMDB Rating: " + response.data.imdbRating +
+            ", Rotten Tomatoes Rating: " + response.data.tomatoRating + ", Produced in: " + response.data.Country + ", Language: " + response.data.Language +
+            ", Plot: " + response.data.Plot + ", Actors: " + response.data.Actors + ". Phew! That was a lot of information!")
+    }
+)
+
+//    `do-what-it-says`
 // 4. `node liri.js do-what-it-says`
 
 //    * Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 //      * It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
 //      * Edit the text in random.txt to test out the feature for movie-this and concert-this.
+
+// UHHHH.....
