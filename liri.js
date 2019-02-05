@@ -7,23 +7,24 @@
 
 // Require npms according to documentation
 
-require('node-spotify-api');
-// Had var spotify here before, but removed it since I created a var spotify below as specified in instructions
-var axios = require('axios');
-var moment = require('moment');
 require('dotenv').config()
 var fs = require('fs');
+var axios = require('axios');
+var spotify require('node-spotify-api');
+var moment = require('moment');
 
 // Load exports from keys.js file that have authorization keys
 // BandsInTown & OMDB - These are public so we will use Axios. 
 var keys = require("./keys");
-var spotify = new Spotify(keys.spotify);
+var spotifyKey = new Spotify(keys.spotify);
 
 // Read in the command line arguments
 // Node is [0], file is [1], LIRI command is [2]
 // If band/song/movie is more than one word, use process.argv.slice(3).join(" "); 
-process.argv[2];
-process.argv[3];
+var action = process.argv[2];
+// var paraneter = process.argv[3];
+var parameter = process.argv.slice(3).join(" ");
+
 console.log(process.argv[2])
 console.log(process.argv.slice(3).join(" "))
 
@@ -33,12 +34,18 @@ console.log(process.argv.slice(3).join(" "))
 //      * Name of the venue, Venue location, Date of the Event (use moment to format this as "MM/DD/YYYY")
 // STILL NEED TO FORMAT THE DATE USING MOMENT.JS
 
-// concert-this = process.argv[2]
-var artist = process.argv.slice(3).join(" ");
-var bandQuery = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
-axios.get(bandQuery).then(
+function concertInfo(parameter) {
+    var searchArtist = parameter
+}
+
+var artistQuery = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+axios.get(artistQuery).then(
     function (response) {
-        console.log("Playing at " + response.venue.name + " in " + response.venue.city + " on " + response.datetime + ".")
+        console.log("--------------------");
+        console.log("Venue: " + response.venue.name);
+        console.log("City: " + response.venue.city);
+        console.log("Date & Time: " + response.datetime);
+        console.log("--------------------");
     }
 )
 
@@ -51,16 +58,22 @@ axios.get(bandQuery).then(
 //      * The album that the song is from
 //  If no song is provided then your program will default to "The Sign" by Ace of Base.
 
-// spotify-this-song = process.argv[2]
-var artist = process.argv.slice(3).join(" ");
+function spotifyInfo(parameter) {
 
-// ASK: DO I DO THIS LIKE THE OTHERS WITH AXIOS, OR DO I USE A FUNCTION BECAUSE THE NPM IS LOADED? IF A FUNCTION, HOW DO I START?
-// use a switch statement with this function?
-    // function spotify() {
-    //     this.song = song;
-    // }
+    var searchSong;
+    if (parameter === undefined) {
+        searchSong = "The Sign Ace of Base";
+    } else {
+        searchSong = parameter;
+    }
+}
+
+// finish spotify
 
 
+
+
+   
 // OMDB - use Axios to retrieve data from the OMDB API
 // `node liri.js movie-this '<movie name here>'`
 // This will output the following information abou the movie:
@@ -71,14 +84,29 @@ var artist = process.argv.slice(3).join(" ");
 // got json info from Stack Overflow... hope that works
 // Question: why does the OMDB site not let you do more testing?? It says I reached my max for no reason?
 
-// movie-this = process.argv[2]
-var movie = process.argv.slice(3).join(" ");
+function movieInfo(parameter) {
+
+    var searchMovie;
+    if (searchMovie === undefined) {
+        movieInfo = "Mr. Nobody";
+    } else {
+        searchMovie = parameter;
+    }
+}
+
 var movieQuery = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 axios.get(movieQuery).then(
     function (response) {
-        console.log("Movie Name: " + response.data.Title + ", Year Released: " + response.data.Year + ", IMDB Rating: " + response.data.imdbRating +
-            ", Rotten Tomatoes Rating: " + response.data.tomatoRating + ", Produced in: " + response.data.Country + ", Language: " + response.data.Language +
-            ", Plot: " + response.data.Plot + ", Actors: " + response.data.Actors + ". Phew! That was a lot of information!")
+        console.log("--------------------");
+        console.log("Movie Name: " + response.data.Title);
+        console.log("Release Year: " + response.data.Year);
+        console.log("IMDB Rating: " + response.data.imdbRating);
+        console.log("Rotten Tomatoes Rating: " + response.data.tomatoRating);
+        console.log("Production Country: " + response.data.Country);
+        console.log("Language: " + response.data.Language);
+        console.log("Plot: " + response.data.Plot);
+        console.log("Actors: " + response.data.Actors);
+        console.log("--------------------");
     }
 )
 
@@ -90,3 +118,26 @@ axios.get(movieQuery).then(
 //      * Edit the text in random.txt to test out the feature for movie-this and concert-this.
 
 // UHHHH.....
+
+function switchCase() {
+
+    switch (action) {
+
+        // case 'concert-this':
+        // bandsInTown(parameter);
+        // break;
+
+        case 'spotify-this-song':
+        searchSong(parameter);
+        break;
+
+        case 'movie-this':
+        movieInfo(parameter);
+        break;
+
+        default:                            
+        logIt("Invalid Instructions");
+        break;
+
+    }
+};
