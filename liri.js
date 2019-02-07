@@ -22,25 +22,25 @@ var parameter = process.argv.slice(3).join(" ");
 // console.log(process.argv[2])
 // console.log(process.argv.slice(3).join(" "))
 
-function switchCase() {
-    switch (action) {
-        case 'concert-this':
-            concertInfo(parameter)
-            break;
+// Q: does switch need to be in a function?
+switch (action) {
+    case 'concert-this':
+        concertInfo(parameter)
+        break;
 
-        case 'spotify-this-song':
-            spotifyInfo(parameter);
-            break;
+    case 'spotify-this-song':
+        spotifyInfo(parameter);
+        break;
 
-        case 'movie-this':
-            movieInfo(parameter);
-            break;
-        
-        // case 'do-what-it-says':
-        //     doThis(parameter);
-        //     break;
-    }
+    case 'movie-this':
+        movieInfo(parameter);
+        break;
+
+    // case 'do-what-it-says':
+    //     doThis(parameter);
+    //     break;
 };
+
 
 // Bandsintown - use Axios to retrieve data from the Bandsintown API
 // `node liri.js concert-this <artist/band name here>`
@@ -71,6 +71,7 @@ function concertInfo(parameter) {
 // `node liri.js spotify-this-song '<song name here>'`
 //  Output: Artist(s), song name, album
 //  If no song is provided then your program will default to "The Sign" by Ace of Base.
+//  Q: not sure how to attach random.txt in order to play "the sign"
 function spotifyInfo(parameter) {
     if (!parameter) {
         parameter = "the sign ace of base";
@@ -136,7 +137,7 @@ function spotifyInfo(parameter) {
     // Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
     // It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
     // Edit the text in random.txt to test out the feature for movie-this and concert-this
-    
+
     // function doThis(parameter) {
     //     fs.readFile("./random.txt", "utf8", function (error, data) {
     //         if (error) {
