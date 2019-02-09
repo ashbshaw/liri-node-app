@@ -54,7 +54,7 @@ function concertInfo(parameter) {
                 console.log("Venue: " + response.data[i].venue.name);
                 console.log("City: " + response.data[i].venue.city);
                 // need to format the time also
-                console.log("Date & Time: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
+                console.log("Date & Time: " + moment(response.data[i].datetime).format("MM/DD/YYYY HH:mm:ss"));
                 console.log("--------------------");
             };
         }).catch(function (err) {
@@ -123,6 +123,7 @@ function doThis(parameter) {
         } else {
             var random = data.split(",");
             console.log(random)
+            spotify.search({ type: 'track', query: parameter, limit: 1 },
         }
         // need to add the spotify info to run the song
     })
