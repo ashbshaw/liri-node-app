@@ -41,69 +41,50 @@ switch (action) {
         break;
 };
 
-
 // Bandsintown - use Axios to retrieve data from the Bandsintown API
 // `node liri.js concert-this <artist/band name here>`
 // Output: Name of the venue, Venue location, Date of the Event
-
 function concertInfo(parameter) {
     var artistQuery = "https://rest.bandsintown.com/artists/" + parameter + "/events?app_id=codingbootcamp";
     axios.get(artistQuery).then(
         function (response) {
+            //console.log(response.data);
             for (var i = 0; i < response.data.length; i++) {
-                // Print each element of the array/
                 console.log("--------------------");
-                console.log("Venue: " + response[i].data.venue[0].name);
-                console.log("City: " + response[i].data.venue[0].city);
-                console.log("Date & Time: " + moment(response[i].data[0].datetime).format("MM/DD/YYYY"));
+                console.log("Venue: " + response.data[i].venue.name);
+                console.log("City: " + response.data[i].venue.city);
+                // need to format the time also
+                console.log("Date & Time: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
                 console.log("--------------------");
             };
-            fs.appendFile("./log.txt", function (err) {
-                if (err) {
-                    console.log("Error: " + err);
-                } else {
-                    console.log("Liri log is updated.")
-                }
-            })
-        }
-    ).catch(function (err) {
-        console.log("Error: " + err)
-    })
+        }).catch(function (err) {
+            console.log("Error: " + err)
+        })
 };
 
 // Spotify - use key to retrieve data
 // `node liri.js spotify-this-song '<song name here>'`
 //  Output: Artist(s), song name, album
 //  If no song is provided then your program will default to "The Sign" by Ace of Base.
-//  Q: not sure how to attach random.txt 
-
 function spotifyInfo(parameter) {
     if (!parameter) {
         parameter = "the sign ace of base";
-    }
-    spotify.search({ type: 'track', query: parameter }, function (err, data) {
-        var songInfo = data.tracks.items;
-        for (var i = 0; i < 5; i++) {
+    } else {
+        spotify.search({ type: 'track', query: parameter }, function (err, data) {
+            var songInfo = data.tracks.items[1];
             if (err) {
                 console.log("Error: " + err);
-                return;
+                //return;
             } else {
                 console.log("--------------------");
-                console.log("Artist: " + songInfo[i].artists[0].name);
-                console.log("Song: " + songInfo[i].name);
-                console.log("Album: " + songInfo[i].album.name);
-                console.log("Preview Link: " + songInfo[i].preview_url);
+                console.log("Artist: " + songInfo.artists[0].name);
+                console.log("Song: " + songInfo.name);
+                console.log("Album: " + songInfo.album.name);
+                console.log("Preview Link: " + songInfo.preview_url);
                 console.log("--------------------");
-            };
-            fs.appendFile("./log.txt", function (err) {
-                if (err) {
-                    console.log("Error: " + err);
-                } else {
-                    console.log("Liri log is updated.")
-                }
-            });
-        }
-    })
+            }
+        })
+    }
 }
 
 // OMDB - use Axios to retrieve data from the OMDB API
@@ -121,37 +102,28 @@ function movieInfo(parameter) {
             console.log("Movie Name: " + response.data.Title);
             console.log("Release Year: " + response.data.Year);
             console.log("IMDB Rating: " + response.data.imdbRating);
-            console.log("Rotten Tomatoes Rating: " + response.data.tomatoRating);
+            console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
             console.log("Production Country: " + response.data.Country);
             console.log("Language: " + response.data.Language);
             console.log("Plot: " + response.data.Plot);
             console.log("Actors: " + response.data.Actors);
             console.log("--------------------");
-            fs.appendFile("./log.txt", function (err) {
-                if (err) {
-                    console.log(err);
-                } else {
-                    console.log("Liri log is updated.")
-                }
-            })
-        }
-    ).catch(function (err) {
-        console.log("Error: " + err)
-    })
+        }).catch(function (err) {
+            console.log("Error: " + err)
+        })
 };
 
 // `node liri.js do-what-it-says`
 // Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 // It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
-// Edit the text in random.txt to test out the feature for movie-this and concert-this
-
 function doThis(parameter) {
     fs.readFile("./random.txt", "utf8", function (err, data) {
         if (err) {
             return console.log("Error: " + err);
         } else {
-            doThisResult = data.split(",");
-            spotifyInfo(doThisResult[0], doThis[1])
+            var random = data.split(",");
+            console.log(random)
         }
+        // need to add the spotify info to run the song
     })
 }
