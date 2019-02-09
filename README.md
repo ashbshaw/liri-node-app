@@ -13,16 +13,16 @@ This is a LIRI application (Language Interpretation and Recognition Interface) w
 
 Create your own Spotify and API keys and replace it with the information in the file called .env. This file should not have a file extension (important).
 
-** Spotify API Keys **
+**Spotify API Keys**
 SPOTIFY_ID=your-spotify-id SPOTIFY_SECRET=your-spotify-secret
 
-** NPM Installations **
+**NPM Installations**
 Navigate to the root of your project. Then in the terminal command line run npm init, this will initalize a package.json for your project.
 Include the following NPM installations: npm dotenv, npm install axios, npm node-spotify-api, npm install moment
 
 # Deployment
 
-** BandsinTown**
+**BandsinTown**
 Run node liri.js 'concert-this' '<artist name here>'
 
 
