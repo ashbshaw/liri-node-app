@@ -1,25 +1,16 @@
-function (err) {
-                if (err) {
-                    console.log(err);
-                } else {
-                    console.log("Liri log is updated.")
-                }
-            }function (err) {
-                if (err) {
-                    console.log(err);
-                } else {
-                    console.log("Liri log is updated.")
-                }
-            }function (err) {
-                if (err) {
-                    console.log(err);
-                } else {
-                    console.log("Liri log is updated.")
-                }
-            }function (err) {
-                if (err) {
-                    console.log("Error: " + err);
-                } else {
-                    console.log("Liri log is updated.")
-                }
-            }
+
+-------------------
+node liri.js spotify-this-song danny nedelko
+
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Joy as an Act of Resistance.
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Danny Nedelko
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
