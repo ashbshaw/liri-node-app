@@ -14,3 +14,530 @@ Song: Danny Nedelko
 Album: Danny Nedelko
 Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
 --------------------
+-------------------
+node liri.js concert-this idles
+
+--------------------
+Venue: SOLD OUT - 100 Club
+City: London
+Date & Time: 02/11/2019 19:00:08
+--------------------
+--------------------
+Venue: SOLD OUT - Tramshed Cardiff
+City: Cardiff
+Date & Time: 03/27/2019 19:00:30
+--------------------
+--------------------
+Venue: SOLD OUT - Norwich UEA
+City: Norwich
+Date & Time: 03/28/2019 19:00:12
+--------------------
+--------------------
+Venue: SOLD OUT - The Leadmill
+City: Sheffield
+Date & Time: 03/26/2019 19:00:40
+--------------------
+--------------------
+Venue: SOLD OUT - Empire Music Hall
+City: Belfast
+Date & Time: 04/01/2019 19:00:27
+--------------------
+--------------------
+Venue: SOLD OUT - Vicar Street
+City: Dublin
+Date & Time: 04/02/2019 19:00:41
+--------------------
+--------------------
+Venue: SOLD OUT - Brighton Dome
+City: Brighton
+Date & Time: 03/29/2019 19:00:12
+--------------------
+--------------------
+Venue: SOLD OUT - Albert Hall
+City: City Centre
+Date & Time: 04/03/2019 19:00:12
+--------------------
+--------------------
+Venue: SOLD OUT - The Electric Ballroom
+City: London
+Date & Time: 04/04/2019 19:00:48
+--------------------
+--------------------
+Venue: SOLD OUT - Electric Ballroom
+City: London
+Date & Time: 04/06/2019 19:00:00
+--------------------
+--------------------
+Venue: SOLD OUT - The Electric Ballroom
+City: London
+Date & Time: 04/05/2019 19:00:09
+--------------------
+--------------------
+Venue: La Cartonnerie
+City: Reims
+Date & Time: 04/08/2019 19:00:34
+--------------------
+--------------------
+Venue: SOLD OUT - Trix
+City: Antwerpen
+Date & Time: 04/09/2019 19:00:14
+--------------------
+--------------------
+Venue: SOLD OUT - De Helling
+City: Utrecht
+Date & Time: 04/10/2019 19:00:07
+--------------------
+--------------------
+Venue: SOLD OUT - Doornroosje
+City: Nijmegen
+Date & Time: 04/11/2019 19:00:35
+--------------------
+--------------------
+Venue: SOLD OUT - Manufaktur B26
+City: Schwäbisch Gmünd
+Date & Time: 04/13/2019 19:00:42
+--------------------
+--------------------
+Venue: SOLD OUT - Rotondes
+City: Luxemburg
+Date & Time: 04/12/2019 19:00:11
+--------------------
+--------------------
+Venue: Live Music Hall
+City: Köln
+Date & Time: 04/15/2019 19:00:21
+--------------------
+--------------------
+Venue: Universidad de Bielefeld
+City: Bi
+Date & Time: 04/16/2019 19:00:05
+--------------------
+--------------------
+Venue: E-Werk Fahrradwerkstatt
+City: Erh
+Date & Time: 04/17/2019 19:00:40
+--------------------
+--------------------
+Venue: L'Autre Canal
+City: Nancy
+Date & Time: 04/18/2019 19:00:21
+--------------------
+--------------------
+Venue: Le 22 D'auron
+City: Bourges
+Date & Time: 04/19/2019 21:00:00
+--------------------
+--------------------
+Venue: Paaspop
+City: Schijndel
+Date & Time: 04/21/2019 19:00:19
+--------------------
+--------------------
+Venue: Shaky Knees Festival
+City: Atlanta
+Date & Time: 05/03/2019 19:00:52
+--------------------
+--------------------
+Venue: SOLD OUT - KINGS
+City: Raleigh
+Date & Time: 05/05/2019 19:00:07
+--------------------
+--------------------
+Venue: The Broadberry
+City: Richmond
+Date & Time: 05/06/2019 19:00:18
+--------------------
+--------------------
+Venue: SOLD OUT - Metro Gallery
+City: Baltimore
+Date & Time: 05/07/2019 19:00:57
+--------------------
+--------------------
+Venue: THE HOLLOW
+City: Albany
+Date & Time: 05/08/2019 19:00:33
+--------------------
+--------------------
+Venue: SOLD OUT - Brooklyn Steel
+City: Brooklyn
+Date & Time: 05/10/2019 19:00:20
+--------------------
+--------------------
+Venue: Rock & Roll Hotel
+City: Washington
+Date & Time: 05/11/2019 19:00:49
+--------------------
+--------------------
+Venue: SOLD OUT - ROCK AND ROLL HOTEL
+City: Washington
+Date & Time: 05/12/2019 19:00:26
+--------------------
+--------------------
+Venue: Beachland Ballroom & Tavern
+City: Cleveland
+Date & Time: 05/14/2019 19:00:19
+--------------------
+--------------------
+Venue: Le 106
+City: Rouen
+Date & Time: 04/20/2019 19:00:54
+--------------------
+--------------------
+Venue: recordBar
+City: Kcmo
+Date & Time: 05/16/2019 19:00:51
+--------------------
+--------------------
+Venue: The Curtain Club
+City: Dallas
+Date & Time: 05/17/2019 19:00:26
+--------------------
+--------------------
+Venue: SOLD OUT - BARRACUDA
+City: Austin
+Date & Time: 05/18/2019 19:00:55
+--------------------
+--------------------
+Venue: SOLD OUT - Valley Bar
+City: Phoenix
+Date & Time: 05/20/2019 19:00:41
+--------------------
+--------------------
+Venue: The Fonda Theatre
+City: Los Angeles
+Date & Time: 05/22/2019 19:00:40
+--------------------
+--------------------
+Venue: Great American Music Hall
+City: Sf
+Date & Time: 05/24/2019 19:00:05
+--------------------
+--------------------
+Venue: SOLD OUT - Great American Music Hall
+City: Sf
+Date & Time: 05/25/2019 19:00:22
+--------------------
+--------------------
+Venue: SOLD OUT - WONDER BALLROOM
+City: Portland
+Date & Time: 05/27/2019 19:00:17
+--------------------
+--------------------
+Venue: SOLD OUT - Neumos
+City: Seattle
+Date & Time: 05/28/2019 19:00:36
+--------------------
+--------------------
+Venue: All Points East
+City: London
+Date & Time: 05/31/2019 12:00:00
+--------------------
+--------------------
+Venue: OpenAir St. Gallen AG
+City: St. Gallen
+Date & Time: 06/30/2019 19:00:27
+--------------------
+--------------------
+Venue: Rock For People
+City: Hradec Králové
+Date & Time: 07/04/2019 12:00:00
+--------------------
+--------------------
+Venue: Site De Malsaucy
+City: Belfort
+Date & Time: 07/05/2019 00:00:00
+--------------------
+--------------------
+Venue: Chateau De Beauregard A Herouville St Clair
+City: Montagny-sainte-felicite
+Date & Time: 07/06/2019 15:00:00
+--------------------
+--------------------
+Venue: Mainsquare Festival
+City: Arras
+Date & Time: 07/07/2019 19:00:56
+--------------------
+--------------------
+Venue: Iveagh Garden Hotel
+City: Dublin
+Date & Time: 07/11/2019 19:00:11
+--------------------
+--------------------
+Venue: NOS Alive
+City: Algés
+Date & Time: 07/13/2019 19:00:52
+--------------------
+--------------------
+Venue: Oya Festival
+City: Oslo
+Date & Time: 08/07/2019 19:00:23
+--------------------
+--------------------
+Venue: Sziget Festival
+City: Budapest
+Date & Time: 08/13/2019 19:00:27
+--------------------
+--------------------
+Venue: Evenemententerrein Walibi Holland
+City: Netherlands
+Date & Time: 08/16/2019 19:00:00
+--------------------
+--------------------
+Venue: Belly Up
+City: Solana Beach
+Date & Time: 05/21/2019 19:00:15
+--------------------
+-------------------
+node liri.js spotify-this-song danny nedelko
+
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Joy as an Act of Resistance.
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Danny Nedelko
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+-------------------
+node liri.js movie-this death of stalin
+
+--------------------
+Movie Name: The Death of Stalin
+Release Year: 2017
+IMDB Rating: 7.2
+Rotten Tomatoes Rating: 96%
+Production Country: UK, France, Belgium, Canada
+Language: English
+Plot: Moscow, 1953. After being in power for nearly 30 years, Soviet dictator Josef Stalin takes ill and quickly dies. Now the members of the Council of Ministers scramble for power.
+Actors: Olga Kurylenko, Tom Brooke, Paddy Considine, Justin Edwards
+--------------------
+-------------------
+node liri.js movie-this fight club
+
+--------------------
+Movie Name: Fight Club
+Release Year: 1999
+IMDB Rating: 8.8
+Rotten Tomatoes Rating: 79%
+Production Country: USA, Germany
+Language: English
+Plot: An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.
+Actors: Edward Norton, Brad Pitt, Meat Loaf, Zach Grenier
+--------------------
+-------------------
+node liri.js do-what-it-says 
+
+--------------------
+Artists: Backstreet Boys
+Song: I Want It That Way
+Album: The Hits--Chapter One
+Preview Link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Backstreet Boys
+Song: I Want It That Way
+Album: Millennium
+Preview Link: https://p.scdn.co/mp3-preview/b8c2410a5acb68b462be6ac85f1312430e2b149c?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Anthem Lights
+Song: I Want It That Way
+Album: Covers Part IV
+Preview Link: https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: "Weird Al" Yankovic
+Song: Ebay (Parody of "I Want It That Way" by the Backstreet Boys)
+Album: Poodle Hat
+Preview Link: https://p.scdn.co/mp3-preview/e217ea111ab84a777f204252fce4b18d5de3ae80?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Tyler and Mark
+Song: I Want It That Way
+Album: Beautiful Dreams
+Preview Link: https://p.scdn.co/mp3-preview/99c791194bbd4e5f315ca8964babf0b69bc520b3?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Backstreet Boys
+Song: I Want It That Way
+Album: 90 Sweet 90s Hits!
+Preview Link: https://p.scdn.co/mp3-preview/2f96341eb8415a3efb27375db1c4d59928408c2f?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Dynamite Boy
+Song: I Want It That Way
+Album: Punk Goes Pop
+Preview Link: null
+--------------------
+--------------------
+Artists: Backstreet Boys
+Song: I Want It That Way
+Album: NKOTBSB
+Preview Link: https://p.scdn.co/mp3-preview/adf2485de3f3f375593b5307a792e8d8e6f19794?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Glee Cast
+Song: Bye Bye Bye / I Want It That Way (Glee Cast Version)
+Album: Bye Bye Bye / I Want It That Way (Glee Cast Version)
+Preview Link: https://p.scdn.co/mp3-preview/3aa63b5c98b98ae333e567813e5c720abb2914f0?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Boyce Avenue
+Song: I Want It That Way
+Album: Cover Sessions, Vol. 2
+Preview Link: https://p.scdn.co/mp3-preview/764f1dcb8c9a9cec099cc361cb388f931bf023d3?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Manuel Costa
+Song: I Want It That Way
+Album: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/cdde86f49ca4ef217ac08bbbb0c6295c16f015b0?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Scott Bradlee's Postmodern Jukebox, Shoshana Bean
+Song: I Want It That Way
+Album: Selfies on Kodachrome
+Preview Link: https://p.scdn.co/mp3-preview/53296f4b689baaa0be6d94e8720c044e98d4b3e3?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Scary Pockets, Casey Abrams
+Song: I Want It That Way
+Album: Nu Funk
+Preview Link: https://p.scdn.co/mp3-preview/33685e005149d5e7d0199a764163ff77f7762e29?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: "Weird Al" Yankovic
+Song: Ebay (Parody of "I Want It That Way" by the Backstreet Boys)
+Album: The Essential "Weird Al" Yankovic
+Preview Link: https://p.scdn.co/mp3-preview/5632d8e302d70afaa8f79c962aa4b2032a45b3ef?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Backstreet Boys
+Song: I Want It That Way
+Album: NOW That's What I Call 90s Pop
+Preview Link: https://p.scdn.co/mp3-preview/c9302062adf4f59e60335f30c7ca46b487a267fb?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Steel Panther
+Song: I Want It That Way
+Album: I Want It That Way
+Preview Link: null
+--------------------
+--------------------
+Artists: #90s Update
+Song: I Want It That Way
+Album: #90s Update
+Preview Link: https://p.scdn.co/mp3-preview/4722ade5be55bf642f5cc9578b94c092a0fcf3a7?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Scott Bradlee's Postmodern Jukebox, Shoshana Bean
+Song: I Want It That Way
+Album: PMJ Is For Lovers: The Love Song Collection
+Preview Link: https://p.scdn.co/mp3-preview/53296f4b689baaa0be6d94e8720c044e98d4b3e3?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Kyle Olthoff, Destiny Jenkins
+Song: I Want It That Way
+Album: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/bb5d73d1bfe8a8b38cd5278112c7022599464c67?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: Landon Austin & Julia Sheer
+Song: I Want It That Way
+Album: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/e777be5446dc3df34abc2eaec241edb5a590976c?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+-------------------
+node liri.js spotify-this-song danny nedelko
+
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Joy as an Act of Resistance.
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Danny Nedelko
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+-------------------
+node liri.js spotify-this-song danny nedelko
+
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Joy as an Act of Resistance.
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Danny Nedelko
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+-------------------
+node liri.js spotify-this-song danny nedelko
+
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Joy as an Act of Resistance.
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Danny Nedelko
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+-------------------
+node liri.js spotify-this-song danny nedelko
+
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Joy as an Act of Resistance.
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Danny Nedelko
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+-------------------
+node liri.js spotify-this-song danny nedelko
+
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Joy as an Act of Resistance.
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Danny Nedelko
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+-------------------
+node liri.js spotify-this-song danny nedelko
+
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Joy as an Act of Resistance.
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
+--------------------
+Artists: IDLES
+Song: Danny Nedelko
+Album: Danny Nedelko
+Preview Link: https://p.scdn.co/mp3-preview/f172d7b5548a8724ba84c642c2e81bfe859037ab?cid=b484071adc0144209368cd1bec323c0d
+--------------------
