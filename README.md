@@ -30,7 +30,7 @@ Run node liri.js 'concert-this' '<artist name here>'
 
 * This will show the concert venue, city, date, and time from in your terminal/bash window
 
-**Screen Shot**
+!https://github.com/ashbshaw/liri-node-app/blob/master/images/bandsintown_capture.PNG
 
 
 **Spotify**
