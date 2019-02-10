@@ -30,7 +30,7 @@ Run node liri.js 'concert-this' '<artist name here>'
 
 * This will show the concert venue, city, date, and time from in your terminal/bash window
 
-!(https://github.com/ashbshaw/liri-node-app/blob/master/images/bandsintown_capture.PNG)
+![bandsintown](https://github.com/ashbshaw/liri-node-app/blob/master/images/bandsintown_capture.PNG)
 
 
 **Spotify**
@@ -39,7 +39,7 @@ Run node liri.js 'spotify-this-song' '<song name here>'
 
 * This will show the artist(s), name of song, album song is from, and song preview link in your terminal/bash window
 
-**Screen Shot**
+![spotify](https://github.com/ashbshaw/liri-node-app/blob/master/images/spotify_capture.PNG)
 
 
 **OMDB**
@@ -48,14 +48,14 @@ Run node liri.js 'movie-this' '<movie name here>'
  
 * This will show title of the movie, year movie was released, IMDB Rating, Rotten Tomatoes Rating, country movie was made, language, plot, actors in your terminal/bash window
 
-**Screen Shot**
+![movie](https://github.com/ashbshaw/liri-node-app/blob/master/images/movie_capture.PNG)
 
 
 Run node liri.js do-what-it-says
 
 * Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI’s commands
 
-**Screen Shot**
+![random](https://github.com/ashbshaw/liri-node-app/blob/master/images/random_capture.PNG)
 
 
 
