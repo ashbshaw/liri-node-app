@@ -28,4 +28,50 @@ Include the following NPM installations: npm dotenv, npm install axios, npm node
 
 Run node liri.js 'concert-this' '<artist name here>'
 
+* This will show the concert venue, city, date, and time from in your terminal/bash window
+
+**Screen Shot**
+
+
+**Spotify**
+
+Run node liri.js 'spotify-this-song' '<song name here>'
+
+* This will show the artist(s), name of song, album song is from, and song preview link in your terminal/bash window
+
+**Screen Shot**
+
+
+**OMDB**
+
+Run node liri.js 'movie-this' '<movie name here>'
+ 
+* This will show title of the movie, year movie was released, IMDB Rating, Rotten Tomatoes Rating, country movie was made, language, plot, actors in your terminal/bash window
+
+**Screen Shot**
+
+
+Run node liri.js do-what-it-says
+
+* Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI’s commands
+
+**Screen Shot**
+
+
+
+# Built With
+
+* Visual Studio Code (https://code.visualstudio.com) - Text editor
+* Javascript
+* Node.js (https://nodejs.org/en) - Framework used
+* JSON (http://www.json.org) - Data format used
+* Bandsintown API (http://www.artists.bandsintown.com/bandsintown-api) - API for concerts
+* Spotify API (https://developer.spotify.com/documentation/web-api) - API for music
+* OMDB API (http://www.omdbapi.com) - API for movies
+
+# Author
+
+**Ashley Shaw** - https://ashbshaw.github.io/Ashley-Shaw-Portfolio/
+
+
 
