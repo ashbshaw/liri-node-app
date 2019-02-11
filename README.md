@@ -51,11 +51,13 @@ Run node liri.js 'movie-this' 'movie name here'
 ![movie](/images/movie_capture.PNG)
 
 
+**Random**
+
 Run node liri.js do-what-it-says
 
 * Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI’s commands
 
-![random](/random_capture.PNG)
+![random](/images/random_capture.PNG)
 
 
 
