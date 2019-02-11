@@ -20,13 +20,13 @@ SPOTIFY_ID=your-spotify-id SPOTIFY_SECRET=your-spotify-secret
 **NPM Installations**
 
 Navigate to the root of your project. Then in the terminal command line run npm init, this will initalize a package.json for your project.
-Include the following NPM installations: npm dotenv, npm install axios, npm node-spotify-api, npm install moment
+Include the following NPM installations: npm dotenv, npm install axios, npm node-spotify-api, npm install moment.
 
 # Deployment
 
 **BandsinTown**
 
-Run node liri.js 'concert-this' '<artist name here>'
+Run node liri.js 'concert-this' 'artist name here'
 
 * This will show the concert venue, city, date, and time from in your terminal/bash window
 
@@ -35,7 +35,7 @@ Run node liri.js 'concert-this' '<artist name here>'
 
 **Spotify**
 
-Run node liri.js 'spotify-this-song' '<song name here>'
+Run node liri.js 'spotify-this-song' 'song name here'
 
 * This will show the artist(s), name of song, album song is from, and song preview link in your terminal/bash window
 
@@ -44,7 +44,7 @@ Run node liri.js 'spotify-this-song' '<song name here>'
 
 **OMDB**
 
-Run node liri.js 'movie-this' '<movie name here>'
+Run node liri.js 'movie-this' 'movie name here'
  
 * This will show title of the movie, year movie was released, IMDB Rating, Rotten Tomatoes Rating, country movie was made, language, plot, actors in your terminal/bash window
 
